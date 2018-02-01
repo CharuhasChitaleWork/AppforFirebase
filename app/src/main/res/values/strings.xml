@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppforFirebase</string>
+    <string name="purchase">Thank you ! items have been added to your cart ! click Purchase to buy them</string>
+    <string name="loan">Loan Approved ! CLICK below to recieve amount</string>
+</resources>
