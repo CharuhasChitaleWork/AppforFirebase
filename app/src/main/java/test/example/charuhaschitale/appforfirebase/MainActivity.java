@@ -1,5 +1,6 @@
 package test.example.charuhaschitale.appforfirebase;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
@@ -11,6 +12,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 
+import com.google.android.gms.ads.identifier.AdvertisingIdClient;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.analytics.FirebaseAnalytics;
@@ -80,7 +82,16 @@ public class MainActivity extends AppCompatActivity {
                         Log.w(TAG, "getDynamicLink:onFailure", e);
                     }
                 });
-    }
+
+
+
+
+}
+
+   /* public static AdvertisingIdClient.Info getAdvertisingIdInfo(Context context) {
+        return null;
+    }*/
+
     private void openactivity3() {
         Bundle param = new Bundle();
         param.putString(FirebaseAnalytics.Param.CHECKOUT_STEP,"1");
