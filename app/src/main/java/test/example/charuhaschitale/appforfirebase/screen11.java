@@ -20,7 +20,7 @@ import java.util.Random;
 
 public class screen11 extends AppCompatActivity {
     Button buy1,buy2,buy3,buy4,back;
-    int i;
+    long i;
     private static final String TAG = "screen11";
     private FirebaseAnalytics mFirebaseAnalytics;
     @Override
@@ -115,7 +115,8 @@ public class screen11 extends AppCompatActivity {
         param.putString(FirebaseAnalytics.Param.ITEM_CATEGORY,"Footwear");
         param.putString(FirebaseAnalytics.Param.ITEM_NAME," WoodLand Flips Brown");
         //param.putString(FirebaseAnalytics.Param.ITEM_BRAND,"WoodLand");
-        param.putDouble(FirebaseAnalytics.Param.PRICE,225);
+        param.putDouble(FirebaseAnalytics.Param.PRICE,225.50);
+        param.putString(FirebaseAnalytics.Param.CURRENCY,"INR");
         param.putString(FirebaseAnalytics.Param.ITEM_ID,"2");
         param.putLong(FirebaseAnalytics.Param.QUANTITY,i);
         mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.ADD_TO_CART,param);
@@ -136,7 +137,8 @@ public class screen11 extends AppCompatActivity {
         param.putString(FirebaseAnalytics.Param.ITEM_CATEGORY,"Bags");
         param.putString(FirebaseAnalytics.Param.ITEM_NAME,"WildCraft Black 35L 220");
       //  param.putString(FirebaseAnalytics.Param.ITEM_BRAND,"WildCraft");
-        param.putDouble(FirebaseAnalytics.Param.PRICE,300);
+        param.putDouble(FirebaseAnalytics.Param.PRICE,300.50);
+        param.putString(FirebaseAnalytics.Param.CURRENCY,"INR");
         param.putLong(FirebaseAnalytics.Param.QUANTITY,i);
         param.putString(FirebaseAnalytics.Param.ITEM_ID,"3");
         mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.ADD_TO_CART,param);
@@ -158,7 +160,8 @@ public class screen11 extends AppCompatActivity {
         param.putString(FirebaseAnalytics.Param.ITEM_CATEGORY,"Watch");
         param.putString(FirebaseAnalytics.Param.ITEM_NAME,"Casio Edifice 100m");
        // param.putString(FirebaseAnalytics.Param.ITEM_BRAND,"Casio");
-        param.putDouble(FirebaseAnalytics.Param.PRICE,1190);
+        param.putDouble(FirebaseAnalytics.Param.PRICE,1190.90);
+        param.putString(FirebaseAnalytics.Param.CURRENCY,"INR");
         param.putLong(FirebaseAnalytics.Param.QUANTITY,i);
         param.putString(FirebaseAnalytics.Param.ITEM_ID,"4");
         mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.ADD_TO_CART,param);
@@ -181,7 +184,8 @@ public class screen11 extends AppCompatActivity {
         param.putString(FirebaseAnalytics.Param.ITEM_CATEGORY,"Clothing");
         param.putString(FirebaseAnalytics.Param.ITEM_NAME,"UCB Black Shirt");
        // param.putString(FirebaseAnalytics.Param.ITEM_BRAND,"UCB");
-        param.putDouble(FirebaseAnalytics.Param.PRICE,345);
+        param.putDouble(FirebaseAnalytics.Param.PRICE,345.50);
+        param.putString(FirebaseAnalytics.Param.CURRENCY,"INR");
         param.putLong(FirebaseAnalytics.Param.QUANTITY,i);
         param.putString(FirebaseAnalytics.Param.ITEM_ID,"1");
         mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.ADD_TO_CART,param);

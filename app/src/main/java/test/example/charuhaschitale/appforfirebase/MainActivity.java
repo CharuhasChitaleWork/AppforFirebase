@@ -119,8 +119,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent= new Intent(this,screen11.class);
         startActivity(intent);
     }
-    
-
-
 
 }

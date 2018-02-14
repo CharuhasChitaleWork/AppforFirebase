@@ -83,12 +83,13 @@ public class screen12 extends AppCompatActivity {
 
     private void acitivypurchase() {
         Bundle bundle = new Bundle();
-        bundle.putString(FirebaseAnalytics.Param.COUPON,"NewUser");
+        bundle.putString(FirebaseAnalytics.Param.COUPON,"14FEB");
         bundle.putString(FirebaseAnalytics.Param.TRANSACTION_ID,str);
         bundle.putDouble(FirebaseAnalytics.Param.TAX,180.00);
         bundle.putString(FirebaseAnalytics.Param.CURRENCY,"INR");
         bundle.putDouble(FirebaseAnalytics.Param.SHIPPING,30.00);
-        bundle.putDouble(FirebaseAnalytics.Param.PRICE,value);
+        bundle.putLong(FirebaseAnalytics.Param.QUANTITY,Quan);
+        bundle.putDouble(FirebaseAnalytics.Param.VALUE,value);
         mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.ECOMMERCE_PURCHASE,bundle);
         Toast.makeText(getApplicationContext(), toastt,
                 Toast.LENGTH_LONG).show();
