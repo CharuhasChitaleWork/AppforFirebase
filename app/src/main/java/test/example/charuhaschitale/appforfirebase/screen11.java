@@ -23,6 +23,7 @@ public class screen11 extends AppCompatActivity {
     long i;
     private static final String TAG = "screen11";
     private FirebaseAnalytics mFirebaseAnalytics;
+    double price;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -109,13 +110,14 @@ public class screen11 extends AppCompatActivity {
 
 
     private void acitivitycall2() {
+        price = 225.50;
         Random r = new Random() ;
         i= r.nextInt(15)+1;
         Bundle param = new Bundle();
         param.putString(FirebaseAnalytics.Param.ITEM_CATEGORY,"Footwear");
         param.putString(FirebaseAnalytics.Param.ITEM_NAME," WoodLand Flips Brown");
         //param.putString(FirebaseAnalytics.Param.ITEM_BRAND,"WoodLand");
-        param.putDouble(FirebaseAnalytics.Param.PRICE,225.50);
+        param.putDouble(FirebaseAnalytics.Param.PRICE,price);
         param.putString(FirebaseAnalytics.Param.CURRENCY,"INR");
         param.putString(FirebaseAnalytics.Param.ITEM_ID,"2");
         param.putLong(FirebaseAnalytics.Param.QUANTITY,i);
@@ -130,6 +132,7 @@ public class screen11 extends AppCompatActivity {
         startActivity(intent);
     }
     private void acitivitycall3() {
+        price = 300.50;
         Random r = new Random() ;
         i= r.nextInt(15)+1;
         Bundle param = new Bundle();
@@ -137,7 +140,7 @@ public class screen11 extends AppCompatActivity {
         param.putString(FirebaseAnalytics.Param.ITEM_CATEGORY,"Bags");
         param.putString(FirebaseAnalytics.Param.ITEM_NAME,"WildCraft Black 35L 220");
       //  param.putString(FirebaseAnalytics.Param.ITEM_BRAND,"WildCraft");
-        param.putDouble(FirebaseAnalytics.Param.PRICE,300.50);
+        param.putDouble(FirebaseAnalytics.Param.PRICE,price);
         param.putString(FirebaseAnalytics.Param.CURRENCY,"INR");
         param.putLong(FirebaseAnalytics.Param.QUANTITY,i);
         param.putString(FirebaseAnalytics.Param.ITEM_ID,"3");
@@ -153,14 +156,14 @@ public class screen11 extends AppCompatActivity {
     }
 
     private void acitivitycall4() {
+        price = 1190.90;
         Random r = new Random() ;
         i= r.nextInt(15)+1;
-        Bundle paramb = new Bundle();
         Bundle param = new Bundle();
         param.putString(FirebaseAnalytics.Param.ITEM_CATEGORY,"Watch");
         param.putString(FirebaseAnalytics.Param.ITEM_NAME,"Casio Edifice 100m");
        // param.putString(FirebaseAnalytics.Param.ITEM_BRAND,"Casio");
-        param.putDouble(FirebaseAnalytics.Param.PRICE,1190.90);
+        param.putDouble(FirebaseAnalytics.Param.PRICE,price);
         param.putString(FirebaseAnalytics.Param.CURRENCY,"INR");
         param.putLong(FirebaseAnalytics.Param.QUANTITY,i);
         param.putString(FirebaseAnalytics.Param.ITEM_ID,"4");
@@ -178,13 +181,14 @@ public class screen11 extends AppCompatActivity {
 
 
     private void acitivitycall1() {
+        price = 345.50;
         Random r = new Random() ;
         i= r.nextInt(15)+1;
         Bundle param = new Bundle();
         param.putString(FirebaseAnalytics.Param.ITEM_CATEGORY,"Clothing");
         param.putString(FirebaseAnalytics.Param.ITEM_NAME,"UCB Black Shirt");
        // param.putString(FirebaseAnalytics.Param.ITEM_BRAND,"UCB");
-        param.putDouble(FirebaseAnalytics.Param.PRICE,345.50);
+        param.putDouble(FirebaseAnalytics.Param.PRICE,price);
         param.putString(FirebaseAnalytics.Param.CURRENCY,"INR");
         param.putLong(FirebaseAnalytics.Param.QUANTITY,i);
         param.putString(FirebaseAnalytics.Param.ITEM_ID,"1");
